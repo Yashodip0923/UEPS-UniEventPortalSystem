@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+form input,
+form select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+div {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* assets/css/style.css or similar */
+
+/* Snackbar styles */
+.snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click of a button */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 9999; /* Add a z-index if needed (higher than other elements) */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+    font-size: 17px; /* Increase font size */
+    opacity: 0; /* Start invisible for fade-in */
+    transition: visibility 0s, opacity 0.5s linear; /* Transition for fading */
+}
+
+/* Show the snackbar (add this class with JavaScript) */
+.snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    opacity: 1; /* Fade in */
+}
+
+/* Optional: Different colors for success/error */
+.snackbar.success {
+    background-color: #28a745; /* Green for success */
+}
+
+.snackbar.error {
+    background-color: #dc3545; /* Red for error */
+}
+
+.snackbar.info {
+    background-color: #17a2b8; /* Blue for info */
+}
